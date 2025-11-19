@@ -1,0 +1,3 @@
+tasks.c:11:6:blinky_led	8	static
+tasks.c:14:6:get_button_input	8	static
+tasks.c:19:6:control_3led	8	static
