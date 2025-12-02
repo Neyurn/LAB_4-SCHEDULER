@@ -9,7 +9,7 @@
 #include "software_timer.h"
 
 
-#define MAX_COUNTER 10
+#define MAX_COUNTER 10 //6
 struct TimerStruct timer[10];
 
 //Set the counter for software timer
@@ -29,7 +29,7 @@ int isFlag( int idx){
 
 //Function to be invoked in Timer_ISR
 void timerRun(){
-	for(int i=0; i <MAX_COUNTER; i++){
+	for(int i=0; i <10; i++){
 		if (timer[i].counter > 0) {
 			--timer[i].counter;
 			if(timer[i].counter <= 0) timer[i].flag = 1;
